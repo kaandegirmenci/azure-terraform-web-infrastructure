@@ -103,7 +103,7 @@ resource "azurerm_linux_virtual_machine" "web" {
     storage_account_type = "Standard_LRS"
   }
 
-  custom_data = base64encode(file("cloud-init.yaml")
+  custom_data = base64encode(file("cloud-init.yaml"))
 
   source_image_reference {
     publisher = "Canonical"
